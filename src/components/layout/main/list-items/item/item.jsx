@@ -9,7 +9,7 @@ const Item = ({listItems, deleteItem}) => {
                 listItems.map(item => (
                     <div className={Style.item} key={item._id}>
                         <p>{item.item}</p>
-                        <ControlItem deleteItem={deleteItem}/>
+                        <ControlItem id={item._id} deleteItem={deleteItem}/>
                     </div>))
             }
         </span>

@@ -4,8 +4,6 @@ import Header from "./components/layout/header/header";
 import Main from "./components/layout/main/main";
 import axios from "axios";
 import item from "./components/layout/main/list-items/item/item";
-import Style from "./components/ui/buttons/button-remove/button-remove.module.css";
-import Trash from "./components/ui/buttons/button-remove/trash.svg";
 
 function App() {
     const [itemText, setItemText] = useState('');
@@ -35,11 +33,13 @@ function App() {
         }, []);
 
     const deleteItem = async (id) => {
+        console.log("id",id)
         try {
             const res = await axios.delete(`http://localhost:5500/api/item/${id}`)
             const newListItems = listItems.filter(item => item._id !== id);
+            console.log("list", listItems)
             setListItems(newListItems);
-            console.log(res.data)
+            console.log("delete",res)
         } catch (err) {
             console.log(err);
         }

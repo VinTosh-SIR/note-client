@@ -1,14 +1,13 @@
 import Style from "./button-remove.module.css";
 import "./../button.css";
 import Trash from "./trash.svg";
-import item from "../../../layout/main/list-items/item/item";
 
 
-const ButtonRemove = ({deleteItem}) => {
+const ButtonRemove = ({deleteItem, id}) => {
 
-
+    console.log("in button item")
     return (
-        <button onClick={()=> {deleteItem(item._id)}}
+        <button onClick={()=> {deleteItem(id)}}
                 className={`button + ${Style.right} + ${Style.right}`}>
             <img className={Style} src={Trash}/>
         </button>

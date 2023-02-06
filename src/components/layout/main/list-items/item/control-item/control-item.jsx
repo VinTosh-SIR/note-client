@@ -4,13 +4,13 @@ import ButtonImportant from "../../../../../ui/buttons/button-important/button-i
 import ButtonRemove from "../../../../../ui/buttons/button-remove/button-remove";
 
 
-const ControlItem = ({deleteItem}) => {
+const ControlItem = ({deleteItem, id}) => {
 
     return (
         <div className={Style.control}>
             <ButtonChange/>
             <ButtonImportant/>
-            <ButtonRemove deleteItem={deleteItem}/>
+            <ButtonRemove id={id} deleteItem={deleteItem}/>
         </div>
 
     )
