@@ -3,10 +3,11 @@ import "./../button.css";
 import Pen from "./pen-fill.svg"
 
 
-const ButtonChange = () =>{
+const ButtonChange = ({setIsUpdating, item}) =>{
     return(
-        <button className={`button + ${Style}`}><img src={Pen}/></button>
+        <button onClick={()=> {setIsUpdating(item._id)}} className={`button + ${Style}`}><img src={Pen}/></button>
     )
+
 }
 
 export default ButtonChange;

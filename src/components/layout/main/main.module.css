@@ -4,4 +4,15 @@ main{
     flex-direction: column;
     justify-content: left;
     padding: 0 16px 0 16px;
+    width: 100%;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    justify-content: right;
+    max-width: 1400px;
+    width: 100%;
 }

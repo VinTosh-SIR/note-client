@@ -10,7 +10,7 @@ const InputAddItem = ({addItem, setItemText, itemText}) => {
             <input type="text" onChange={event => {
                 setItemText(event.target.value)
             }} value={itemText} placeholder="text"/>
-            <button></button>
+            <button>ADD</button>
         </form>
     )
 }

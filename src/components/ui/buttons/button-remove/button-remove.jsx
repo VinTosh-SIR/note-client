@@ -3,11 +3,11 @@ import "./../button.css";
 import Trash from "./trash.svg";
 
 
-const ButtonRemove = ({deleteItem, id}) => {
+const ButtonRemove = ({deleteItem, item}) => {
 
-    console.log("in button item")
+
     return (
-        <button onClick={()=> {deleteItem(id)}}
+        <button onClick={()=> {deleteItem(item._id)}}
                 className={`button + ${Style.right} + ${Style.right}`}>
             <img className={Style} src={Trash}/>
         </button>

@@ -1,5 +1,16 @@
 .button{
     display: block;
+    border-radius: 50%;
+    background: #F9F0DA;
+    color: #9E9C9C;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border:2px solid #7BA7AB;
+}
+.button-filter{
+    display: block;
     border-radius: 4px;
     background: #F9F0DA;
     color: #9E9C9C;
@@ -7,4 +18,20 @@
     font-size: 1rem;
     cursor: pointer;
     border:2px solid #7BA7AB;
+    max-width: 90px;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+
+.button:hover{
+    background-color: #7BA7AB;
+    color: #F9F0DA;
+    animation: 3s;
+}
+
+.button-filter:hover{
+    background-color: #F9F0DA;
+    color: #9E9C9C;
+    animation: 3s;
 }

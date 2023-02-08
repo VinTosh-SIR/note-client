@@ -4,7 +4,9 @@
 
 form {
     position: relative;
-    width: 300px;
+    min-width: 320px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -22,17 +24,17 @@ input {
 form > button {
     position: absolute;
     top: 0;
-    right: 0px;
-    width: 42px;
+    right: 0;
+    width: 100px;
     height: 42px;
     border: none;
     background: #7BA7AB;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    color: #F9F0DA;
 }
 
 form > button:before {
-    content: "+";
     font-family: FontAwesome;
     font-size: 16px;
     color: #F9F0DA;

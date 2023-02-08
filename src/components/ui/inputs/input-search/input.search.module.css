@@ -1,0 +1,6 @@
+.form{
+    display: block;
+}
+.form > input{
+    max-width: 800px;
+}
