@@ -1,4 +1,4 @@
-.app{
+.app {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,6 +7,21 @@
     max-width: 1400px;
 }
 
-body{
-    background-color: #d7caca;
+body {
+    background-color: #ffffff;
+    background-image: url("./background.png");
+}
+
+.lovers {
+    position: absolute;
+    width: 900px;
+    height: 1400px;
+    right: -200px;
+}
+.heart{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 350px;
+    z-index: -20;
 }

@@ -1,5 +1,21 @@
-header{
+header {
     display: flex;
     justify-content: left;
     padding: 0 16px 0 16px;
+    z-index: 999;
+}
+
+h1 {
+    color: #553a70;
+    font-size: 3rem;
+    text-shadow: 2px 2px #553a70;
+    font-style: italic;
+}
+
+.logo {
+    padding: 3px 0 0 20px;
+}
+
+.fan{
+
 }

@@ -3,6 +3,8 @@ import './app.css';
 import Header from "./components/layout/header/header";
 import Main from "./components/layout/main/main";
 import axios from "axios";
+import lovers from "./lovers.png";
+import heart from "./heart.png";
 
 function App() {
     const [itemText, setItemText] = useState('');
@@ -49,7 +51,7 @@ function App() {
         e.preventDefault();
         try {
             const res = await axios.put(`http://localhost:5500/api/item/${isUpdating}`, {item: updateItemText});
-            const updatedItemIndex = listItems.findIndex(item=> item._id === isUpdating);
+            const updatedItemIndex = listItems.findIndex(item => item._id === isUpdating);
             const updatedItem = listItems[updatedItemIndex].item = updateItemText;
             setUpdateItemText('');
             setIsUpdating('');
@@ -60,6 +62,7 @@ function App() {
 
     return (
         <div className="app">
+            <img src={lovers} className="lovers"/>
             <Header/>
             <Main
                 addItem={addItem}
@@ -73,6 +76,7 @@ function App() {
                 setUpdateItemText={setUpdateItemText}
                 updateItem={updateItem}
             />
+            <img src={heart} className="heart"/>
         </div>
     )
 }

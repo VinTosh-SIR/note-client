@@ -4,6 +4,7 @@ main{
     flex-direction: column;
     justify-content: left;
     padding: 0 16px 0 16px;
+    z-index: 900;
     width: 100%;
 }
 .filters{

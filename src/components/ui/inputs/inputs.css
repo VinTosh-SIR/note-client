@@ -14,24 +14,29 @@ input {
     width: 100%;
     height: 42px;
     padding-left: 10px;
-    border: 2px solid #7BA7AB;
+    border: 2px solid #553a70;
     border-radius: 5px;
     outline: none;
-    background: #F9F0DA;
+    background: #ffffff;
     color: #000000;
+    box-shadow: 2px 5px 5px #553a70;
 }
 
 form > button {
+    box-shadow: 2px 5px 5px #553a70;
     position: absolute;
     top: 0;
     right: 0;
     width: 100px;
-    height: 42px;
+    height: 40px;
     border: none;
-    background: #7BA7AB;
+    background: #b202ff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    color: #F9F0DA;
+    color: #0a0a0a;
+}
+form > button:hover{
+    background: #8301cb;
 }
 
 form > button:before {
